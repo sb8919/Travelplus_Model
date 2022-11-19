@@ -1,0 +1,142 @@
+.wrap {
+    position: absolute;
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+  display: flex;
+  font-size: 1.4em;
+  background-color: #00c73c;
+  color: white;
+}
+.filter {
+    display: flex;
+    z-index: 200;
+    height: 70px;
+    padding-left: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+    background-color: white;
+}
+.filter_box {
+    flex: 0 1 auto;
+    max-width: 300px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 38px;
+    padding: 8px;
+    background-color: white;
+    margin: 16px 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.gnb {
+    margin-left: auto;
+}
+.logo, .gnb {
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, .4);
+}
+.search {
+    display: flex;
+    width: 400px;
+    padding: 14px 0;
+    margin-left: 10px;
+}
+.search_button {
+    width: 37px;
+    height: 37px;
+    background-color: #26a93a;
+}
+.search_input{
+    flex: 1;
+    width: 322px;
+    height: 37px;
+    background-color: white;
+}
+.tablist{
+    display:flex;
+    justify-content:space-between;
+    flex:0 0 40px;
+    border:1px solid rgba(0,0,0,0.12);
+    background:#fff;
+}
+.tab{
+    position:relative;
+    display:block;
+    line-height:40px;
+    font-weight:bold;
+    padding:0 15px;
+}
+.tab.selected:after{
+    position: absolute;
+    bottom: 9px;
+    left: 13px;
+    right: 13px;
+    height: 9px;
+    background:rgba(0,209,69,0.7);
+    content: '';
+}
+.map_wrap {
+    display:flex;
+    flex: 1;
+}
+.map {
+		flex: 1;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+}
+.map h3{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.ui_box:last-of-type {
+    margin-bottom: 50px;
+}
+.photo_container{
+    width:50%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.photo_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 8px;
+    margin: 0 auto;
+}
+.photo_list.column{
+    align-content: flex-start;
+    flex-direction: column;
+    height:500px;
+}
+.photo_box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 206px;
+    margin: 8px;
+    background-color: white;
+}
+.photo {
+    width: 100%;
+    height: 120px;
+    background-color: gray;
+}
+.description {
+    flex: auto;
+}
+.btn_refresh {
+    height: 38px;
+    margin: 15px 15px 0 auto;
+    padding: 9px 11px 8px;
+    border: 1px solid rgba(0,0,0,0.15);
+    background-color: white;
+    font-size: 17px;
+}
